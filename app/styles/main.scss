@@ -1,0 +1,87 @@
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  font-family: 'Abhaya Libre', serif;
+  color: #1B44EE;
+  background-color: #F3D0BD;
+  font-weight: 800;
+  text-align: center;
+}
+
+.content-mobile {
+  display: none;
+  h1 {
+    font-size: 72px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: #1B44EE;
+    padding: 30px 0 0 0;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .section-hero {
+    margin: 100px 0 0 0;
+  }
+
+  .section-description{
+    margin: 100px 0;
+  }
+
+  .section-contact {
+    margin: 100px 0;
+  }
+}
+
+.content-desktop {
+  .flex-container {
+    display: flex;
+  }
+
+  p {
+    font-size: 48px;
+  }
+
+  .section-contact {
+    width: 40%;
+    text-align: left;
+
+  }
+
+  .section-hero {
+    width: 60%;
+  }
+}
+
+@media(max-width: 1000px) {
+  .content-mobile {
+    display: block;
+  }
+
+  .content-desktop {
+    display: none;
+  }
+}
+
