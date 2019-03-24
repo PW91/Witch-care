@@ -1,22 +1,38 @@
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+@font-face {
+  font-family: myfont_bold;
+  src: url("../fonts/myfont_bold.otf");
+}
+
+@font-face {
+  font-family: myfont_regular;
+  src: url("../fonts/myfont_regular.otf");
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Abhaya Libre', serif;
-  color: #1B44EE;
-  background-color: #F3D0BD;
+  font-family: "myfont_bold", serif; /*"Abhaya Libre", serif;*/
+  color: #1b44ee;
+  background-color: #f3d0bd;
   font-weight: 800;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .content-mobile {
   display: none;
+  padding: 30px;
+
+  .sign {
+    margin: 0 10px;
+    max-width: 20px;
+  }
+
   h1 {
-    font-size: 72px;
+    font-size: 62px;
     text-transform: uppercase;
     letter-spacing: 4px;
     margin: 0;
@@ -24,29 +40,39 @@ body {
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 39px;
     padding: 0;
     margin: 0;
+    display: inline-block;
+    margin-top: -15px;
   }
 
   p {
     font-size: 18px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 320px;
+  }
+
+  .regular {
+    font-family: "myfont_regular", serif;
   }
 
   a {
-    color: #1B44EE;
+    color: #1b44ee;
     padding: 30px 0 0 0;
     margin: 0;
     font-weight: 500;
+    display: inline-block;
+    margin-top: 10px;
+    font-family: "myfont_regular", serif;
   }
 
   .section-hero {
     margin: 100px 0 0 0;
   }
 
-  .section-description{
+  .section-description {
     margin: 100px 0;
   }
 
@@ -60,22 +86,75 @@ body {
     display: flex;
   }
 
+  h1 {
+    text-transform: uppercase;
+    font-size: 4vw;
+    letter-spacing: 8px;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 2.6vw;
+    display: inline-block;
+    margin-top: -1vw;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.5vw;
+    font-weight: 400;
+    display: inline-block;
+    margin: 3vw 0;
+    font-family: "myfont_regular", serif;
+  }
+
   p {
-    font-size: 48px;
+    font-size: 2.5vw;
+    margin: 0;
+  }
+
+  a {
+    font-size: 2vw;
+    color: #1b44ee;
+    padding-top: 50px;
+    display: inline-block;
+    font-weight: 500;
+    font-family: "myfont_regular", serif;
   }
 
   .section-contact {
     width: 40%;
     text-align: left;
+    padding: 5vw;
 
+    p {
+      max-width: 25vw;
+      margin: 0;
+      font-size: 2vw;
+    }
   }
 
   .section-hero {
     width: 60%;
+    background-image: url("../assets/background.jpg");
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .sign {
+      margin: 0 1vw;
+      max-width: 2vw;
+    }
+
+    &__content {
+    }
   }
 }
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
   .content-mobile {
     display: block;
   }
@@ -84,4 +163,3 @@ body {
     display: none;
   }
 }
-
