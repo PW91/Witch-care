@@ -85,7 +85,7 @@ function images() {
 };
 
 function fonts() {
-  return src('app/fonts/**/*.{eot,svg,ttf,woff,woff2}')
+  return src('app/fonts/**/*.{eot,svg,ttf,woff,woff2,otf}')
     .pipe($.if(!isProd, dest('.tmp/fonts'), dest('dist/fonts')));
 };
 

@@ -1,5 +1,6 @@
 {
   "private": true,
+  "homepage": "https://pw91.github.io/Witch-care/",
   "engines": {
     "node": ">=4"
   },
@@ -13,6 +14,7 @@
     "cross-env": "^5.2.0",
     "cssnano": "^4.1.7",
     "del": "^3.0.0",
+    "gh-pages": "^2.0.1",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-cli": "^2.0.1",
@@ -38,7 +40,8 @@
     "start": "gulp serve",
     "build": "cross-env NODE_ENV=production gulp",
     "test": "npm run serve:test",
-    "tasks": "gulp --tasks"
+    "tasks": "gulp --tasks",
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": [
     "> 1%",
